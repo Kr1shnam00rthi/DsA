@@ -49,7 +49,7 @@ print(var2.lower())
 print(var2.isupper())
 print(var2.islower())
 print(var2.count('l'))
-print(var2.endswith('d')) 
+print(var2.endswith('d')) #startswith()
 print(var2.strip()) # removes whitespaces rstrip lstrip
 print(var2.find("H")) # Return start index of string .index()
 print(var2.replace("H","J"))
