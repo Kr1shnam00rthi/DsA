@@ -1,0 +1,14 @@
+
+Root node
+Child node
+Ancestor node
+subtree
+leaf node
+
+Types of Binary Trees:
+	
+	1. Full tree: number of leaf node should be either 0 or 2
+	2. Balanced tree: tree with n nodes shoudl have height log(n)
+	3. Complete tree: All levels are filled except last it must be filled from the right to left
+	4. Perfect tree: A tree in which all interior nodes have two children, and all leaf nodes are at the same level.
+	5. Degenrate tree:  binary tree where each parent node has only one child. This makes the tree essentially a linked list, reducing the efficiency of operations.
