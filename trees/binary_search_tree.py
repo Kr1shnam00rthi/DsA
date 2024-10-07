@@ -1,16 +1,63 @@
-class node:
+class list_node:
 	def __init__(self,data):
 		self.data=data
 		self.left=None
 		self.right=None
 		
 class binarySearchtree:
+	def __init__(self):
+		self.root=None
 	def insert(self,node,data):
-		pass
+		if not root:
+			root=list_node(node)
+			return 
+		def in(node,data):
+			if node.val>data:
+				if node.left:
+					in(node.left,data)
+				else:
+					node.left=list_node(data)
+			else:
+				if node.right:
+					in(node.right,data)
+				else:
+					node.right=list_node(data)
+			
 	
-	def delete(self):
-		pass
-		
+	def delete(self,key):
+		# search for node
+		# if node exist delete the node
+		 if (root==None):
+		 	return None
+		 if (root.val==key):
+		 	return helper(root)
+		 cur=root
+		 while(root!=None):
+			if root.val>key:	
+		 		if(root.left !=None and root.left.val==key):
+		 			root.left=helper(root.left)
+		 		else:
+		 			root=root.left
+		 	else:
+		 		if(root.right!=None and root.right.val==key):
+		 			root.right=helper(root.right)
+		 		else:
+		 			root=root.right
+		 return cur
+		 def helper(root):
+		 	if root.left==None:
+		 		return root.right
+		 	elif root.right==None:
+		 		return root.left:
+		 	right=root.right
+		 	leftright=findlastright(root.left)
+		 	leftright.right=right
+		 	return root.left
+		 def findlastright(node):
+		 	if root.right==None:
+		 		return root
+		 	return findlastright(root.right)		
+		 
 	def preorder(self,node):
 		if not node:
 			return

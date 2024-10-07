@@ -1,0 +1,46 @@
+ 
+ nodes/vertex - represents data
+ 
+ edges - directed / undirected
+ 
+ path- contains lot of nodes each of them are reachable
+     - node cannot appeaer twice in a path
+ 
+ Degree 
+     - In undirected graphs Degree= 2 * Number of nodes
+     - Directed graphs
+     	- Indegree 
+     	- Outdegree
+     	
+ Types of graphs
+ 
+1. Undirected graphs
+2. Directed graphs
+3. Undirected/ Directed cyclic graphs - start from a node end to the same node
+4. Undirected/ Directed Acyclic graphs - we may not able to reach the node again
+5.  ""         ""       Edge weighted graphs - edge weight can be consider as a cost to travel form one node to other
+
+ Grpahs Representation
+
+n,m will be given as input
+
+how we store
+
+1. Adjacency Matrix representation
+   - adj[n+1][n+1]
+2. Adjacency List
+
+ Connected Componenets
+
+1. There exist a componenets for graphs 
+   - group of graphs not connected but still they are called graphs
+   - there can of n components of a single grpah
+   - During traversal we reach completedly one component
+   - To solve this problem we use visited array
+   - By this we can reach all the components of graphs
+   
+   Traversal
+ 
+1. BFS 
+2. DFS
+
